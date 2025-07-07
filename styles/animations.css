@@ -20,11 +20,20 @@
 }
 
 @keyframes sparks-flash {
-    from {
+    0% {
         opacity: 0;
     }
-    to {
+    49.9% {
+        opacity: 0.1;
+    }
+    50% {
         opacity: 1;
+    }
+    99.9% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0;
     }
 }
 
