@@ -302,6 +302,7 @@
     align-items: center;
     width: max-content;
     padding: 17px 21px 13px 0;
+    margin-bottom: 100px;
 }
 
 .button__text {
