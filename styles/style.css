@@ -25,15 +25,13 @@
     background: var(--main-bg);
     background-attachment: fixed;
     background-size: cover;
-    margin-left: auto;
-    margin-right: auto;
     position: relative;
 }
 
 .computed-sizes {
     width: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
-    margin-left: clamp(0rem, 34.742vw - 8.143rem, 23.125rem);
-    margin-right: clamp(0rem, 34.742vw - 8.143rem, 23.125rem);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header {
