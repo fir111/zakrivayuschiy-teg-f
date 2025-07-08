@@ -281,7 +281,7 @@
     transition-delay: 0.56s;
 }
 
-.card__icon-button.is-liked .like-button {
+.card__icon-button.is-liked .like-icon {
     animation: like-icon-scale 0.3s ease-in 0.1s;
     transform-origin: center;
 }
