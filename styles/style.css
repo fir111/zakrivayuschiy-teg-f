@@ -200,6 +200,7 @@
 }
 
 .card__like-button {
+    min-width: 130px;
     padding: 11px 35px 10px 35px;
 }
 
@@ -280,9 +281,7 @@
     transition-delay: 0.56s;
 }
 
-.card__icon-button.is-liked .contour,
-.card__icon-button.is-liked .main-body,
-.card__icon-button.is-liked .core {
+.card__icon-button.is-liked .like-button {
     animation: like-icon-scale 0.3s ease-in 0.1s;
     transform-origin: center;
 }
