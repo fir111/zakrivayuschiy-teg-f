@@ -11,10 +11,10 @@
 */
 
 @keyframes like-icon-scale {
-    0%   {
+    0% {
         transform: scale(1);
     }
-    50%  {
+    50% {
         transform: scale(1.25);
     }
     100% {
