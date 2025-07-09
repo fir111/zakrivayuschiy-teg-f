@@ -11,12 +11,9 @@
 */
 
 @keyframes like-icon-scale {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.25);
-    }
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.25); }
+    100% { transform: scale(1); }
 }
 
 @keyframes sparks-flash {

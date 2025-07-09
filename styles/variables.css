@@ -6,9 +6,9 @@
     --card-text-font-weight: 400;
     --color-white: #FFF;
     --color-black: #000;
-    --color-core: none;
+    --color-core: transparent;
     --color-contour: #000;
-    --color-main-body: none;
+    --color-main-body: transparent;
     --animation-fill-color: #FF0000;
     --watermark-font-color: var(--color-black);
     --watermark-font-color-outline: var(--color-white);

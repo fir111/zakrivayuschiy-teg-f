@@ -215,11 +215,11 @@
     outline: none;
     background-color: var(--background-color);
     transition: border-color 0.3s ease;
+    will-change: transform;
 }
 
 .card__icon-button:focus {
     outline: none;
-    border: 0;
 }
 
 .card__icon-button:focus-visible {
@@ -231,69 +231,75 @@
     margin: auto;
     width: 38px;
     height: 38px;
+    transform-origin: center;
+}
+
+.like-icon .contour {
+    transition: fill 0.1s linear;
+}
+
+.like-icon .main-body {
+    transition: fill 0.3s linear 0s;
+}
+
+.like-icon .core {
+    transition: fill 0.3s linear 0.03s;
 }
 
 .like-icon .sparks {
+    fill: var(--animation-fill-color);
     opacity: 0;
+    transition: opacity 0.3s;
 }
 
-.like-icon .core
-.like-icon .main-body {
-    transition: fill 0.3s ease;
-}
-
-.like-icon .main-body {
-    transition-delay: 0.3s;
-}
-
-.card__icon-button:hover .core {
+.like-icon:focus-visible .core,
+.like-icon:hover .core {
     fill: var(--color-black);
-    transition-delay: 0.3s;
+    transition-delay: 0s;
 }
 
-.card__icon-button:hover .main-body {
-    fill: var(--color-black);
-    transition-delay: 0.5s;
+.like-icon:hover .main-body,
+.like-icon:focus-visible .main-body {
+    fill: var(--color-contour);
+    transition-delay: 0.05s;
 }
 
-.card__icon-button:active .main-body {
+.like-icon:active .core {
     fill: var(--animation-fill-color);
-    transition-delay: 0.5s;
+    transition-delay: 0s;
 }
 
-.card__icon-button:active .core {
+.like-icon:active .main-body {
     fill: var(--animation-fill-color);
-    transition-delay: 0.3s;
-}
-
-.card__icon-button.is-liked .main-body {
-    fill: var(--animation-fill-color);
-    transition-delay: 0.5s;
+    transition-delay: 0.05s;
 }
 
 .card__icon-button.is-liked .core {
     fill: var(--animation-fill-color);
-    transition-delay: 0.3s;
+    transition-delay: 0s;
+}
+
+.card__icon-button.is-liked .main-body {
+    fill: var(--animation-fill-color);
+    transition-delay: 0.05s;
 }
 
 .card__icon-button.is-liked .contour {
     fill: var(--animation-fill-color);
-    transition-delay: 0.56s;
+    transition: fill 0.3s linear 0.06s;
 }
 
-.card__icon-button.is-liked .like-icon {
-    animation: like-icon-scale 0.3s ease-in 0.1s;
-    transform-origin: center;
+.heart {
+    transition: transform 0.3s ease-in;
+}
+
+.card__icon-button.is-liked .heart {
+    animation: like-icon-scale 0.3s ease-in 0.1s 1;
 }
 
 .card__icon-button.is-liked .sparks {
-    animation: sparks-flash 0.3s ease-in 0.3s;
+    animation: sparks-flash 0.3s ease-in 0.3s 1 forwards;
     transform-origin: center;
-}
-
-.card__like-button .contour {
-    fill: var(--color-black);
-    transition: fill 0.1s linear;
 }
 
 .floppy-button {
