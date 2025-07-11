@@ -323,13 +323,15 @@
     mix-blend-mode: difference;
 }
 
-.save-icon__container {
-    display: flex;
-    margin-left: 20px;
-}
+/*.save-icon__container {*/
+/*    display: flex;*/
+/*    margin-left: 20px;*/
+/*}*/
 
 .save-icon {
-    display: block;
+    /*display: block;*/
+    display: flex;
+    margin-left: 20px;
     width: 21px;
     height: 21px;
     mix-blend-mode: difference;
@@ -439,12 +441,12 @@
         padding: 15px 21px 15px 21px;
     }
 
-    .save-icon__container {
-        flex-direction: row;
-        justify-self: center;
-        align-items: center;
-        margin-left: 0;
-    }
+    /*.save-icon__container {*/
+    /*    flex-direction: row;*/
+    /*    justify-self: center;*/
+    /*    align-items: center;*/
+    /*    margin-left: 0;*/
+    /*}*/
 
     .save-icon {
         flex-direction: row;
