@@ -447,15 +447,16 @@
     }
 
     .save-icon {
-        display: block;
-        width: 100%;
+        flex-direction: row;
+        justify-self: center;
+        align-items: center;
+        margin-left: 0;
         width: 28px;
         height: 28px;
     }
 
     dialog {
         max-width: 357px;
-        padding: 30px 42px;
     }
 
     .dialog-header__container {
