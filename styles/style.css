@@ -323,11 +323,15 @@
     mix-blend-mode: difference;
 }
 
+.save-icon__container {
+    display: flex;
+    margin-left: 20px;
+}
+
 .save-icon {
     display: block;
     width: 21px;
     height: 21px;
-    margin-left: 20px;
     mix-blend-mode: difference;
 }
 
@@ -335,6 +339,7 @@
     border: none;
     transition: opacity 0.3s ease-in 0.1s;
     box-sizing: border-box;
+    opacity: 0.5;
 }
 
 .dialog__popup[open] {
@@ -402,10 +407,8 @@
 }
 
 .dialog-button {
-    /*margin-top: 30px;*/
     padding: 10px 130px 5px 130px;
     background-color: var(--background-color);
-    /*min-width: 293px;*/
 }
 
 .dialog-button-text {
@@ -436,7 +439,16 @@
         padding: 15px 21px 15px 21px;
     }
 
+    .save-icon__container {
+        flex-direction: row;
+        justify-self: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
     .save-icon {
+        display: block;
+        width: 100%;
         width: 28px;
         height: 28px;
     }
