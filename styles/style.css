@@ -168,7 +168,6 @@
     align-items: center;
     gap: 5px;
     margin-left: auto;
-    /*max-height: 38px;*/
 }
 
 .button {
@@ -323,13 +322,7 @@
     mix-blend-mode: difference;
 }
 
-/*.save-icon__container {*/
-/*    display: flex;*/
-/*    margin-left: 20px;*/
-/*}*/
-
 .save-icon {
-    /*display: block;*/
     display: flex;
     margin-left: 20px;
     width: 21px;
@@ -441,13 +434,6 @@
         padding: 15px 21px 15px 21px;
     }
 
-    /*.save-icon__container {*/
-    /*    flex-direction: row;*/
-    /*    justify-self: center;*/
-    /*    align-items: center;*/
-    /*    margin-left: 0;*/
-    /*}*/
-
     .save-icon {
         flex-direction: row;
         justify-self: center;
@@ -462,11 +448,10 @@
     }
 
     .dialog-header__container {
-        max-width: 257px;
+        min-width: 257px;
     }
 
     .dialog-button {
-        padding: 10px 114px 10px 114px;
         min-width: 257px;
     }
 }
