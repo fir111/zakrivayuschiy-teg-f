@@ -343,18 +343,22 @@
         </div>
     </article>
     <button class="button floppy-button" onclick="window['dialog-id'].showModal()" type="button">
-        <svg class="save-icon" viewBox="0 0 40 40">
-            <use href="./svg/floppy.svg#floppy"></use>
-        </svg>
+<!--        <div class="save-icon__container">-->
+            <svg class="save-icon" viewBox="0 0 40 40">
+                <use href="./svg/floppy.svg#floppy"></use>
+            </svg>
+<!--        </div>-->
         <span aria-controls="dialog-id"
               class="button__text">Сохранить на память</span>
     </button>
     <dialog class="dialog__popup" id="dialog-id">
-        <form method="dialog">
+        <form method="dialog" class="dialog__popup__form">
             <div class="dialog-header__container">
-                <svg class="dialog-icon" viewBox="0 0 40 40">
-                    <use href="./svg/floppy.svg#floppy"></use>
-                </svg>
+                <div class="dialog-icon__container">
+                    <svg class="dialog-icon" viewBox="0 0 40 40">
+                        <use href="./svg/floppy.svg#floppy"></use>
+                    </svg>
+                </div>
                 <h2 class="dialog-header-text dialog-text__container">
                     Вставьте дискету,&nbsp;чтобы продолжить
                 </h2>
