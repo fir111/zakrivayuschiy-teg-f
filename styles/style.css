@@ -341,7 +341,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 357px;
     border: 2px solid var(--border-color);
 }
 
@@ -356,7 +355,7 @@
     justify-self: center;
     align-items: center;
     width: max-content;
-    margin: 18px 30px;
+    margin: 30px 31px;
     gap: 30px;
     min-width: 293px;
 }
@@ -401,7 +400,7 @@
 }
 
 .dialog-button {
-    padding: 10px 130px 5px 130px;
+    padding: 10px 130px;
     background-color: var(--background-color);
 }
 
@@ -442,15 +441,15 @@
         height: 28px;
     }
 
-    dialog {
-        max-width: 357px;
+    .dialog__popup__form {
+        margin: 32px 20px;
     }
 
     .dialog-header__container {
-        min-width: 257px;
+        max-width: 257px;
     }
 
     .dialog-button {
-        min-width: 257px;
+        padding: 10px 112px;
     }
 }
