@@ -334,7 +334,7 @@
     border: none;
     transition: opacity 0.3s ease-in 0.1s;
     box-sizing: border-box;
-    opacity: 0.5;
+    /*opacity: 0.5;*/
 }
 
 .dialog__popup[open] {
@@ -342,7 +342,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*max-width: 357px;*/
     border: 2px solid var(--border-color);
 }
 
