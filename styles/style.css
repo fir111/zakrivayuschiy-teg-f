@@ -334,6 +334,9 @@
     border: none;
     transition: opacity 0.3s ease-in 0.1s;
     box-sizing: border-box;
+    opacity: 0.5;
+    /*width: 100%;*/
+    padding: 30px 30px;
 }
 
 .dialog__popup[open] {
@@ -355,7 +358,7 @@
     justify-self: center;
     align-items: center;
     width: max-content;
-    margin: 30px 31px;
+    /*margin: 30px 31px;*/
     gap: 30px;
     min-width: 293px;
 }
@@ -441,8 +444,12 @@
         height: 28px;
     }
 
+    .dialog__popup {
+        padding: 30px 20px;
+    }
+
     .dialog__popup__form {
-        margin: 32px 20px;
+        /*margin: 32px 20px;*/
     }
 
     .dialog-header__container {
