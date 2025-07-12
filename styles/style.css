@@ -334,6 +334,7 @@
     border: none;
     transition: opacity 0.3s ease-in 0.1s;
     box-sizing: border-box;
+    opacity: 0.5;
 }
 
 .dialog__popup[open] {
@@ -341,7 +342,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 357px;
+    /*max-width: 357px;*/
     border: 2px solid var(--border-color);
 }
 
@@ -356,7 +357,7 @@
     justify-self: center;
     align-items: center;
     width: max-content;
-    margin: 18px 30px;
+    margin: 30px 31px;
     gap: 30px;
     min-width: 293px;
 }
@@ -401,7 +402,7 @@
 }
 
 .dialog-button {
-    padding: 10px 130px 5px 130px;
+    padding: 10px 130px;
     background-color: var(--background-color);
 }
 
