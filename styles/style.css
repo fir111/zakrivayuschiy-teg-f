@@ -340,10 +340,16 @@
 }
 
 .dialog__popup[open] {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    margin-inline: auto;
+    grid-template-columns: min-content 1fr;
+    grid-template-areas:
+            "icon text"
+            "button button";
+
+    place-items: center;
+    row-gap: 30px;
+    column-gap: 20px;
     border: 2px solid var(--border-color);
 }
 
@@ -353,13 +359,21 @@
 }
 
 .dialog__popup__form {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+            "icon text"
+            "button button";
+
+    /*grid-template-rows: auto;*/
+    /*flex-direction: column;*/
     justify-self: center;
     align-items: center;
     width: max-content;
     /*margin: 30px 31px;*/
-    gap: 30px;
+    row-gap: 20px;
+    column-gap: 30px;
     min-width: 293px;
 }
 
@@ -379,6 +393,7 @@
     height: 100%;
     justify-content: left;
     align-self: center;
+    grid-area: text;
 }
 
 .dialog-icon {
@@ -387,6 +402,7 @@
     height: 39px;
     color: var(--color-black);
     background-color: var(--background-color);
+    grid-area: icon;
 }
 
 .dialog-header-text {
@@ -398,13 +414,22 @@
 }
 
 .dialog-text__container {
-    display: block;
+    /*display: block;*/
     max-width: 234px;
+    grid-area: text;
+}
+
+.dialog__popup form {
+    grid-area: button;
+    inline-size: 100%;
 }
 
 .dialog-button {
     padding: 10px 130px;
     background-color: var(--background-color);
+    inline-size: 100%;
+    /*grid-area: button;*/
+    /*grid-column: 1 / -1;*/
 }
 
 .dialog-button-text {
@@ -445,15 +470,15 @@
     }
 
     .dialog__popup {
-        padding: 30px 20px;
+        padding: 30px 39px;
     }
 
     .dialog__popup__form {
         /*margin: 32px 20px;*/
     }
 
-    .dialog-header__container {
-        max-width: 257px;
+    .dialog-text__container {
+        max-width: 198px;
     }
 
     .dialog-button {
